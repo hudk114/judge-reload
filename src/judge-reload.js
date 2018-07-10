@@ -42,9 +42,6 @@ window.onload = function() {
   }
 
   const t = Number(getCookie(window.name));
-  console.log(Date.now());
-  console.log(t);
-  console.log(Math.abs(Date.now() - t));
   // 刷新10s总够了吧
   if (t && Math.abs(Date.now() - t) < RELOAD_TIME) {
     reload = true;
